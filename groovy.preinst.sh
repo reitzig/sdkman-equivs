@@ -1,6 +1,6 @@
 #!/bin/sh
 
-candidate="/home/**/*/.sdkman/candidates/groovy/*"
+candidate="/home/**/.sdkman/candidates/groovy/*"
 file -E ${candidate}/bin > /dev/null 2>&1
 
 if [ "$?" -ne "0" ]; then
