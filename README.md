@@ -37,3 +37,7 @@ sudo dpkg -i sdkman-java-11-open_1.0_all.deb
  5. The binary versions in the SDKMAN! candidate and the replaced repository package
     may be (wildly) different. Software that depends on the provided package but
     requires a specific version may fail.
+
+ 6. The pre-install script is a _very_ crude check. As long as any user on the current machine has
+    installed a matching candidate, the script will succeed (despite the SDK not being available
+    for all users).
