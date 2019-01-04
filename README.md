@@ -26,3 +26,10 @@ sudo dpkg -i sdkman-java-11-open_1.0_all.deb
   and
     [openjdk-11-jre-headless](https://packages.ubuntu.com/bionic/amd64/openjdk-11-jre-headless/filelist),
   for instance.
+
+ 4. The dummy packages have no dependencies; the assumption is that developers
+    know what they are doing and ensure a working installation beforehand.
+
+ 5. The binary versions in the SDKMAN! candidate and the replaced repository package
+    may be (wildly) different. Software that depends on the provided package but
+    requires a specific version may fail.
