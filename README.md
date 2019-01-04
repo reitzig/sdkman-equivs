@@ -1,3 +1,7 @@
+SDKs installed by [SDKMAN!](https://sdkman.io) do not fulfill dependencies of any packages 
+installed through `dpkg`/`apt`.
+This can be resolved by installing dummy packages that provide the corresponding Debian packages.
+
 ### Usage
 
 ```
