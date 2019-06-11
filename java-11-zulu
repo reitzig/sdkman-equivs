@@ -1,0 +1,20 @@
+Section: misc
+Priority: optional
+Homepage: https://github.com/reitzig/sdkman-equivs
+Standards-Version: 3.9.2
+
+Package: sdkman-java-11-zulu
+Maintainer: Raphael Reitzig <4246780+reitzig@users.noreply.github.com>
+Copyright: LICENSE
+Preinst: java-11-zulu.preinst.sh
+Provides: openjdk-11-jre-headless,
+    java-runtime-headless, java10-runtime-headless, java2-runtime-headless, java5-runtime-headless,
+    java6-runtime-headless, java7-runtime-headless, java8-runtime-headless, java9-runtime-headless,
+    openjdk-11-jdk-headless,
+    java-compiler, java-sdk-headless, java10-sdk-headless, java2-sdk-headless, java5-sdk-headless,
+    java6-sdk-headless, java7-sdk-headless, java8-sdk-headless, java9-sdk-headless,
+    openjdk-11-source
+Conflicts: openjdk-11-jre-headless, openjdk-11-jdk-headless, openjdk-11-source
+Replaces: openjdk-11-jre-headless, openjdk-11-jdk-headless, openjdk-11-source
+Architecture: all
+Description: Dummy package for OpenJDK 11 installed with SDKMAN!
